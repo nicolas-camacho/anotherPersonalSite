@@ -50,7 +50,7 @@ const IndexPage = () => (
   <Layout>
     <MeWrapper>
       <p>Hi <span role="img" aria-label="greeting">👋</span>, I'm Nicolas.</p>
-      <p>I'm a passionate web developer focus on frontend technologies, currently living in Barranquilla, Colombia.</p>
+      <p>I'm a passionate web developer focused on frontend technologies, currently living in Barranquilla, Colombia.</p>
       <p>If you want to conact me, <MailMe href="mailto:nicolas.aguilar1999@gmail.com">email</MailMe> is a great choice.</p>
       <p>Technologies that I actually handle:</p>
     </MeWrapper>
