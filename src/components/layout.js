@@ -1,4 +1,5 @@
 import React from 'react'
+import "typeface-fira-code"
 //styles
 import '../styles/layout.css'
 //components

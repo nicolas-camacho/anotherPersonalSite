@@ -7,6 +7,7 @@ const SocialInfo = styled.div`
 const SocialLink = styled.a`
     text-decoration: none;
     color: #58b368;
+    font-style: italic;
     :hover {
         text-decoration: underline;
     }
