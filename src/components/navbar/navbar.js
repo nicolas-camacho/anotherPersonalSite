@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import './navbar.css'
 
 const StyledLink = styled(Link)`
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #58b368;
     :hover {
@@ -13,7 +13,7 @@ const StyledLink = styled(Link)`
     }
 `
 const HomeLink = styled(Link)`
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     :hover {
