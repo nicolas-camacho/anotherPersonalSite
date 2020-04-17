@@ -1,8 +1,12 @@
 ---
-path: "projects/2020-04-15-personal-page-one"
-date: "2020-04-15"
-title: "Firts iteration of my personal page"
-tags: ['personal page', 'project', 'vue']
+path: "projects/2020-04-15-personal-web-one"
+date: "2019-03-06"
+title: "Firts iteration of my personal web"
+tags: ['personal web', 'project', 'vue']
+url: "https://deploy-portfolio.netlify.app/"
+github: "https://github.com/nicolas-camacho/myPortfolio"
+featuredImage: "../../../images/first-iteration-personal-web.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper dictum erat sit amet facilisis. Ut pharetra ipsum ac pretium commodo. Pellentesque aliquet placerat dui sed faucibus. Sed a felis vulputate, pellentesque felis non, ornare elit. Fusce tristique enim justo, eu porttitor odio commodo in. Suspendisse ac ipsum nunc. Nulla ipsum elit, eleifend quis ornare eget, interdum ut diam. Praesent consequat, velit rutrum scelerisque semper, lectus velit tempus nibh, sit amet vulputate ligula ante et lacus. Mauris semper rhoncus dolor vel eleifend. Phasellus sit amet consectetur sem. Nulla facilisi.
+I used to be a great fan of Vue, so in that moment I decided to build my personal web with Vue, the result was pretty satisfaying but now I look back and it's pretty simple but a little annoying, I learned a lot of thing about
+Vue and how to work with some animations, so yeah, I enjoy and learned built it. 
