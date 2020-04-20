@@ -41,7 +41,6 @@ const ProjectTitle = styled.p`
 const ReadMore = styled(Link)`
     text-decoration: none;
     color: #58b368;
-    margin-left: 10px;
     :hover {
         text-decoration: underline;
     }
@@ -55,7 +54,7 @@ const Projects = ({ data }) => {
         <Layout>
             <Wrapper>
                 <Title to="/projects">Projects</Title>
-                <Date>Last update 2020-04-17</Date>
+                <Date>Last update 2020-04-19</Date>
                 {edges.map(({ node }) => {
                     return (
                         <ProjectWrapper key={node.id}>
@@ -73,20 +72,21 @@ const Projects = ({ data }) => {
 }
 
 export const query = graphql`
-    query {
-        allMarkdownRemark(filter : {frontmatter: {path: {regex: "/projects/"} } }) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        path
-                    }
-                    id
-                    excerpt
+query {
+    allMarkdownRemark(filter: {frontmatter: {path: {regex: "/projects/"}}}, sort: {fields: id, order: DESC}) {
+        edges {
+            node {
+                frontmatter {
+                    title
+                    path
                 }
+                id
+                html
+                excerpt
             }
         }
     }
+}
 `
 
 export default Projects

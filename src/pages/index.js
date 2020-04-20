@@ -55,9 +55,9 @@ const IndexPage = () => (
       <p>Technologies that I actually handle:</p>
     </MeWrapper>
     <Techs>
-      {LOGOS.map(logo => {
+      {LOGOS.map((logo, index) => {
         return (
-          <Logo src={logo} dsize={70} msize={50} />
+          <Logo key={index} src={logo} dsize={70} msize={50} />
         )
       })}
     </Techs>

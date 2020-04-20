@@ -17,6 +17,10 @@ const DateSpan = styled.span`
     color: gray
 `
 
+const ImgSite = styled(Img)`
+    border-radius: 5px;
+`
+
 const ProjectTemplate = ({ data }) => {
     const project = data.markdownRemark
     const { title, featuredImage, url, github, date } = project.frontmatter
@@ -25,9 +29,9 @@ const ProjectTemplate = ({ data }) => {
         <Layout>
             <div>
                 <h2>{title}</h2>
-                <DateSpan>{date}</DateSpan>
+                <DateSpan>Last Update {date}</DateSpan>
                 <div dangerouslySetInnerHTML={{__html: project.html }} />
-                <Img fluid={featuredImage.childImageSharp.fluid} />
+                <ImgSite fluid={featuredImage.childImageSharp.fluid} />
                 <p>
                     <InfoLink href={url} target="_blank">url</InfoLink>
                     <span> ・ </span>
