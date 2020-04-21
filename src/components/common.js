@@ -27,3 +27,11 @@ export const Date = styled.span`
     color: gray;
     display: block;
 `
+
+export const ReadMore = styled(Link)`
+    text-decoration: none;
+    color: #58b368;
+    :hover {
+        text-decoration: underline;
+    }
+`

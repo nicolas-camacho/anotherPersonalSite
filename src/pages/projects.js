@@ -1,9 +1,9 @@
 import React from "react"
-import {Link, graphql} from "gatsby"
+import { graphql } from "gatsby"
 //Components
 import Layout from "../components/layout/layout"
 import styled from "styled-components"
-import { Wrapper, Title, Date } from "../components/common"
+import { Wrapper, Title, Date, ReadMore } from "../components/common"
 
 const ProjectWrapper = styled.div`
     font-size: 0.8em;
@@ -13,14 +13,6 @@ const ProjectWrapper = styled.div`
 const ProjectTitle = styled.p`
     color: #58b368;
     font-weight: bold;
-`
-
-const ReadMore = styled(Link)`
-    text-decoration: none;
-    color: #58b368;
-    :hover {
-        text-decoration: underline;
-    }
 `
 
 const Projects = ({ data }) => {
@@ -49,21 +41,21 @@ const Projects = ({ data }) => {
 }
 
 export const query = graphql`
-query {
-    allMarkdownRemark(filter: {frontmatter: {path: {regex: "/projects/"}}}, sort: {fields: frontmatter___date, order: DESC}) {
-        edges {
-            node {
-                frontmatter {
-                    title
-                    path
+    query {
+        allMarkdownRemark(filter: {frontmatter: {path: {regex: "/projects/"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        path
+                    }
+                    id
+                    html
+                    excerpt
                 }
-                id
-                html
-                excerpt
             }
         }
     }
-}
 `
 
 export default Projects
