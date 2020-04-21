@@ -54,7 +54,7 @@ const Projects = ({ data }) => {
         <Layout>
             <Wrapper>
                 <Title to="/projects">Projects</Title>
-                <Date>Last update 2020-04-19</Date>
+                <Date>Last update 2020-04-21</Date>
                 {edges.map(({ node }) => {
                     return (
                         <ProjectWrapper key={node.id}>
@@ -73,7 +73,7 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
 query {
-    allMarkdownRemark(filter: {frontmatter: {path: {regex: "/projects/"}}}, sort: {fields: id, order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {path: {regex: "/projects/"}}}, sort: {fields: frontmatter___date, order: DESC}) {
         edges {
             node {
                 frontmatter {

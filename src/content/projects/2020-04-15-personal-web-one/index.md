@@ -1,7 +1,7 @@
 ---
 path: "/projects/2020-04-15-personal-web-one"
 date: "2019-03-06"
-title: "Firts iteration of my personal web"
+title: "First iteration of my personal web"
 tags: ['personal web', 'project', 'vue']
 url: "https://deploy-portfolio.netlify.app/"
 github: "https://github.com/nicolas-camacho/myPortfolio"

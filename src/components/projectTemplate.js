@@ -18,7 +18,7 @@ const DateSpan = styled.span`
 `
 
 const ImgSite = styled(Img)`
-    border-radius: 5px;
+    border: 5px solid #58b368;
 `
 
 const ProjectTemplate = ({ data }) => {
