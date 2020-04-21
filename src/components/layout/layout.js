@@ -1,10 +1,10 @@
 import React from 'react'
 import "typeface-fira-code"
 //styles
-import '../styles/layout.css'
+import './layout.css'
 //components
-import Navbar from './navbar/navbar'
-import Footer from './footer/footer'
+import Navbar from '../navbar/navbar'
+import Footer from '../footer'
 
 const Layout = ({children}) => (
     <>

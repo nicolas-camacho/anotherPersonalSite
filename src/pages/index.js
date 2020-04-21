@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 //Components
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 //resources
 import react from "../images/react.svg"
 import vue from "../images/vue.svg"

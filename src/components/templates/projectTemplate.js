@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 //Components
-import Layout from './layout'
+import Layout from '../layout/layout'
 
 const InfoLink = styled.a`
     text-decoration: none;

@@ -10,8 +10,8 @@ const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
-    const projectTemplate = path.resolve(`./src/components/projectTemplate.js`);
-    const postTemplate = path.resolve(`./src/components/postTemplate.js`);
+    const projectTemplate = path.resolve(`./src/components/templates/projectTemplate.js`);
+    const postTemplate = path.resolve(`./src/components/templates/postTemplate.js`);
 
     const projects = await graphql(`
         {
