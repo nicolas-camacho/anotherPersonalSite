@@ -28,7 +28,15 @@ export const Date = styled.span`
     display: block;
 `
 
-export const ReadMore = styled(Link)`
+export const CustomInternalLink = styled(Link)`
+    text-decoration: none;
+    color: #58b368;
+    :hover {
+        text-decoration: underline;
+    }
+`
+
+export const CustomExternalLink = styled.a`
     text-decoration: none;
     color: #58b368;
     :hover {

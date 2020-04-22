@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 //Components
 import Layout from "../components/layout/layout"
 import styled from "styled-components"
-import { Wrapper, Title, Date, ReadMore } from "../components/common"
+import { Wrapper, Title, Date, CustomInternalLink } from "../components/common"
 
 const ProjectWrapper = styled.div`
     font-size: 0.8em;
@@ -30,7 +30,7 @@ const Projects = ({ data }) => {
                             <ProjectTitle>{node.frontmatter.title}</ProjectTitle>
                             <p>
                                 {node.excerpt}
-                                <ReadMore to={node.frontmatter.path}>Read More -></ReadMore>
+                                <CustomInternalLink to={node.frontmatter.path}>Read More -></CustomInternalLink>
                             </p>
                         </ProjectWrapper>
                     )

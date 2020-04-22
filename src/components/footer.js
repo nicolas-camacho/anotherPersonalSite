@@ -1,24 +1,19 @@
 import React from "react"
 import styled from "styled-components"
+//Components
+import { CustomExternalLink } from '../components/common'
 
 const SocialInfo = styled.div`
     text-align: center;
-`
-const SocialLink = styled.a`
-    text-decoration: none;
-    color: #58b368;
     font-style: italic;
-    :hover {
-        text-decoration: underline;
-    }
 `
 
 const Footer = () => (
     <SocialInfo>
         <p>
-            <SocialLink href="https://github.com/nicolas-camacho">GitHub</SocialLink>
+            <CustomExternalLink href="https://github.com/nicolas-camacho" target="_blank">GitHub</CustomExternalLink>
             <span> ・ </span>
-            <SocialLink href="https://linkedin.com/in/nicolas-camacho-aguilar/">Linkedin</SocialLink>
+            <CustomExternalLink href="https://linkedin.com/in/nicolas-camacho-aguilar/" target="_blank">Linkedin</CustomExternalLink>
         </p>
     </SocialInfo>
 )
