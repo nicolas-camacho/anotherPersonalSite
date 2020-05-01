@@ -51,3 +51,64 @@ export const ITEMS = {
         }
     ]
 }
+
+export const RESUME = {
+    'me' : {
+        'name' : 'Nicolas Camacho Aguilar',
+        'phone' : '+57 3505984301',
+        'email' : 'nicolas.aguilar1999@gmail.com',
+        'links' : [
+            {
+                'slug': 'Linkedin.com/in/nicolas-camacho-aguilar',
+                'link': 'https://www.linkedin.com/in/nicolas-camacho-aguilar/'
+            },
+            {
+                'slug': 'github.com/nicolas-camacho',
+                'link': 'https://github.com/nicolas-camacho'
+            },
+            {
+                'slug': 'nicolascamacho.me',
+                'link': 'http://nicolascamacho.me/'
+            }
+        ],
+        'address': 'Cra 61 #64-30, Barranquilla, Atlántico'
+    },
+    'summary' : `I'm a person that is in love with the development world, so that means I keep myself in a state of constant learning regarding every kind of technology that helps me grow my skills and allows me to do every task I need to do at my job, in order to contribute important things to those projects I will work on.`,
+    'experience': [
+        {
+            'place': 'Universidad De La Costa',
+            'time': '(2019/06 - Current)',
+            'job': 'Web Developer',
+            'city': 'Barranquilla, Atlántico',
+            'responsabilities': [
+                'Maintain two web platforms that help to administrate different processes for students and employees.',
+                'Use React JS to create useful and reusable components with readable code.',
+                'Work with Back End technologies in order to make processes easier for the final user.',
+                `Generate and contribute with ideas of web applications to make the college's life of student enjoyable.`
+            ]
+        }
+    ],
+    'education': [
+        {
+            'place': 'Universidad De La Costa',
+            'time': '(2016/02 - Current)',
+            'degree': 'System Engineering',
+            'city': 'Barranquilla, Atlántico'
+        }
+    ],
+    'skills': [
+        'HTML',
+        'CSS',
+        'Javascript',
+        'ReactJS',
+        'VueJS',
+        'Jest',
+        'PHP',
+        'Python',
+        'Django'
+    ],
+    'languages': [
+        'Spanish',
+        'English'
+    ]
+}
